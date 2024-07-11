@@ -1,0 +1,19 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.button {
+  @apply font-semibold text-base flex items-center justify-center text-center rounded bg-green-600 hover:bg-green-700 text-white px-4 py-3 transition-colors disabled:bg-green-800 disabled:text-gray-200 hover:outline;
+}
+
+.checkbox {
+  @apply flex h-5 w-5 appearance-none items-center justify-center rounded-md data-[state=checked]:bg-green-600 focus-visible:outline focus-within:outline-green-600 outline-none border border-gray-400;
+}
+
+.inputUnstyle {
+  @apply h-full w-full font-normal p-0 focus:ring-0 border-none focus:border-none outline-none focus:outline-none bg-transparent text-base placeholder:text-gray-400;
+}
+
+.input {
+  @apply w-full flex items-center px-3 py-2 gap-1 focus:ring-0 focus:border-none focus-within:outline-2 focus-within:outline focus-within:outline-green-500 bg-white border border-gray-300 rounded
+}
